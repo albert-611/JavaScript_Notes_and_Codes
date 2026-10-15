@@ -2,6 +2,8 @@
 
 //! Logical AND (&&)
 console.log(true && false); // false
+console.log(false && false); // false
+console.log(true && true); // false
 
 // Actual evaluation rule:
 console.log("Cat" && "Dog"); // "Dog" (both truthy, returns last)
@@ -28,13 +30,23 @@ console.log(!"hello");   // false (non-empty string is truthy)
 console.log(!!"user");   // true
 console.log(!!undefined);// false
 
-// Exponentiation has higher precedence than multiplication:
-let res1 = 2 * 3 ** 2; // 2 * 9 = 18
-console.log(res1);
-// Unary negation vs exponentiation associativity:
-let res2 = 2 ** 3 ** 2; // Right-to-left: 2 ** (3 ** 2) = 2 ** 9 = 512
-console.log(res2);
+// Nullish Coalescing Operator.
+const user1 = null;
+const user2 = undefined;
+const user3 = "Alice";
 
-// Logical precedence: && runs before ||:
-let res3 = true || false && false; // true || (false && false) = true
-console.log(res3);
+console.log(user1 ?? "Anonymous"); // "Anonymous" (left is null)
+console.log(user2 ?? "Anonymous"); // "Anonymous" (left is undefined)
+console.log(user3 ?? "Anonymous"); // "Alice"     (left is a defined value)
+
+let settings = {
+  theme: "dark",
+  volume: null
+};
+
+// Nullish Assignment (??=)
+settings.theme ??= "light"; // Remains "dark"
+settings.volume ??= 50;     // Becomes 50
+
+console.log(settings); 
+// Output: { theme: "dark", volume: 50 }

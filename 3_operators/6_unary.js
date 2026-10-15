@@ -7,3 +7,14 @@ let p = 5;
 let q = ++p; 
 console.log(q); // 6 (incremented first, then assigned)
 console.log(p); // 6
+
+// Exponentiation has higher precedence than multiplication:
+let res1 = 2 * 3 ** 2; // 2 * 9 = 18
+console.log(res1);
+// Unary negation vs exponentiation associativity:
+let res2 = 2 ** 3 ** 2; // Right-to-left: 2 ** (3 ** 2) = 2 ** 9 = 512
+console.log(res2);
+
+// Logical precedence: && runs before ||:
+let res3 = true || false && false; // true || (false && false) = true
+console.log(res3);
