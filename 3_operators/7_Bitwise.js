@@ -51,3 +51,24 @@ console.log(positiveNum1 >>> 1); // Output: 10
 
 // Negative number becomes an unsigned 32-bit positive integer
 console.log(negativeNum1 >>> 1); // Output: 2147483645
+
+// ! 8. Nullish Coalescing Operator.
+const user1 = null;
+const user2 = undefined;
+const user3 = "Alice";
+
+console.log(user1 ?? "Anonymous"); // "Anonymous" (left is null)
+console.log(user2 ?? "Anonymous"); // "Anonymous" (left is undefined)
+console.log(user3 ?? "Anonymous"); // "Alice"     (left is a defined value)
+
+let settings = {
+  theme: "dark",
+  volume: null
+};
+
+// ! 9. Nullish Assignment (??=)
+settings.theme ??= "light"; // Remains "dark"
+settings.volume ??= 50;     // Becomes 50
+
+console.log(settings); 
+// Output: { theme: "dark", volume: 50 }
