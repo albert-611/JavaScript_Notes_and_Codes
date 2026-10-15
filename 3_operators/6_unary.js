@@ -15,6 +15,3 @@ console.log(res1);
 let res2 = 2 ** 3 ** 2; // Right-to-left: 2 ** (3 ** 2) = 2 ** 9 = 512
 console.log(res2);
 
-// Logical precedence: && runs before ||:
-let res3 = true || false && false; // true || (false && false) = true
-console.log(res3);

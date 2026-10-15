@@ -50,3 +50,7 @@ settings.volume ??= 50;     // Becomes 50
 
 console.log(settings); 
 // Output: { theme: "dark", volume: 50 }
+
+// Logical precedence: && runs before ||:
+let res3 = true || false && false; // true || (false && false) = true
+console.log(res3);
