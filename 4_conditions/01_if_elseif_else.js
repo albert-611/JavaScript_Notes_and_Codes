@@ -18,6 +18,7 @@ else if (hour < 18) {
     console.log("Take some rest");
   }
 } 
+
 else if (hour < 22) {
   console.log("Good evening!");
   if(hour < 18){
@@ -29,5 +30,4 @@ else if (hour < 22) {
 else {
   console.log("Good night!");
 }
-
 // Output: Good afternoon!
