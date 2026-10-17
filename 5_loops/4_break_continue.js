@@ -40,6 +40,7 @@ for (let i = 1; i < 10; i++) {
 }
 console.log(str);
 
+// ! Labeled continue
 let str1 = "";
 
 loop1: for (let j = 1; j < 5; j++) {
@@ -52,7 +53,6 @@ console.log(str1);
 
 
 let str2 = "";
-
 loop1: for (let j = 1; j < 5; j++) {
   loop2: for (let i = 1; i < 5; i++) {
     if (i === 3) { continue loop2; }
