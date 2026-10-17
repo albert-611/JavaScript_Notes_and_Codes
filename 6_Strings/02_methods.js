@@ -89,6 +89,9 @@ let newMsg2 = message.replaceAll("apples", "oranges");
 console.log(newMsg2); 
 // Output: I like oranges, and oranges are healthy.
 
+// ! length
+let str4 = "Albert";
+console.log("Array Length: ",str4.length); 
 // !==========================================
 // !JAVASCRIPT STRING METHODS — MASTER CODE (WITH OUTPUTS)
 // !==========================================
