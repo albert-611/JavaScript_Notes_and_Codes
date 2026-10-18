@@ -21,6 +21,6 @@ emtyArr[0] = "siuu";
 console.log(emtyArr);
 
 let array = ["Toyota", "Honda", "BMW"];
-console.log(array[0][4]);
-console.log(array[1][2]);
-console.log(array[2][2]);
+console.log(array[0][4]); // t
+console.log(array[1][2]); // n
+console.log(array[2][2]); // W
