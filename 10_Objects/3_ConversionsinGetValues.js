@@ -28,3 +28,6 @@ console.log(obj[undefined]);
 let love = "love";
 console.log(obj[love]);
 
+let loves = "loveyou";
+console.log(obj[loves]);
+

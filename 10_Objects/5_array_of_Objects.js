@@ -24,5 +24,7 @@ console.log(classInfo[0].city);
 console.log(classInfo[2].city = "Ashulia");
 console.log(classInfo[2]);
 console.log(classInfo[0].gender = "Male");
+console.log(delete classInfo[2].name);
 console.log(classInfo[0]);
+console.log(classInfo[2]);
 
